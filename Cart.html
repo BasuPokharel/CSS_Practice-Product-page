@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="" width="125px">
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" alt="" width="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoogle()">
+        </div>
+    </div>
+    <!-- -------------------------------------Cart Items Details------------------------------------------- -->
+<div class="small-container cart-page">
+<table>
+<tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Subtotal</th>
+</tr>
+<tr>
+    <td><div class="cart-info">
+        <img src="images/buy-1.jpg" alt="">
+        <div>
+            <p>Red Printed T-Shirt</p>
+            <small>Price: $ 50,00 </small><br>
+            <a href="">Remove</a>
+        </div>
+    </div></td>
+    <td><input type="number" name="" id="" value="1"></td>
+    <td>$ 50,00</td>
+</tr>
+<tr>
+    <td><div class="cart-info">
+        <img src="images/buy-2.jpg" alt="">
+        <div>
+            <p>Red Printed T-Shirt</p>
+            <small>Price: $ 85,00 </small><br>
+            <a href="">Remove</a>
+        </div>
+    </div></td>
+    <td><input type="number" name="" id="" value="1"></td>
+    <td>$ 50,00</td>
+</tr>
+<tr>
+    <td><div class="cart-info">
+        <img src="images/buy-3.jpg" alt="">
+        <div>
+            <p>Red Printed T-Shirt</p>
+            <small>Price: $ 75,00 </small><br>
+            <a href="">Remove</a>
+        </div>
+    </div></td>
+    <td><input type="number" name="" id="" value="1"></td>
+    <td>$ 50,00</td>
+</tr>
+</table>
+<div class="total-price">
+<table>
+    <tr>
+        <td>Subtotal</td>
+        <td>$ 200,00</td>
+    </tr>
+    <tr>
+        <td>Tax</td>
+        <td>$ 30,00</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td>$ 230,00</td>
+    </tr>
+</table>
+
+
+
+
+</div>
+</div>
+
+    <!-- -------------------------------FOOTER BEGINS FROM HERE-------------------------------------------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phones</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleaseure and Benefits of Sports Accessible to the
+                        Many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagem</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Basu Pokharel</p>
+        </div>
+    </div>
+    <!-- js for toogel menu/ -->
+    <script>
+        var MenuItems = documents.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoogle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-- ---------------------------JS FOR PRODUCT GALLARY SINGLE PRODUCT--------------------------------------- -->
+<script>
+var ProductImg=document.getElementById("ProductImg");
+var SmallImg=document.getElementByClassName("Small-img");
+SmallImg[0].onclick=function(){
+ProductImg.src=SmallImg[0].src;
+}
+SmallImg[1].onclick=function(){
+ProductImg.src=SmallImg[1].src;
+}
+SmallImg[2].onclick=function(){
+ProductImg.src=SmallImg[2].src;
+}
+SmallImg[3].onclick=function(){
+ProductImg.src=SmallImg[3].src;
+}
+
+</script>
+</body>
+
+</html>
