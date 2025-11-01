@@ -4,7 +4,7 @@ A simple HTML & CSS project built to practice front-end design
 > 🖥 Desktop-only layout (not responsive).
 
 ## 🚀 Live Demo
-🔗 [View on GitHub Pages](https://basupokharel.github.io/CSS_Practice-Mountain_hero_Page/)
+🔗 [View on GitHub Pages](https://basupokharel.github.io/CSS_Practice-Product-page/)
 
 ## 🧰 Built With
 - HTML5  
